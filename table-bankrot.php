@@ -133,23 +133,22 @@ table.table-bankrot{
 	border-spacing:0;
 	height: auto;
 }
-table.table-bankrot,
-table.table-bankrot td, 
-table.table-bankrot th {
-	border: 1px solid #dee2e6;
-}
+
 table.table-bankrot td,
 table.table-bankrot th {
 	padding: 3px;
 	width: 30px;
 	height: 35px;
   text-align: center;
+
+  border: 1px solid #dee2e6;
 }
 table.table-bankrot td:first-child {
   white-space: nowrap;
 }
 table.table-bankrot th {
-	background: #dee2e6; 
+	background: #dee2e6;
+  border: 1px solid black; 
 	/*color: #fff; */
 	color: black; 
 	font-weight: bold;
