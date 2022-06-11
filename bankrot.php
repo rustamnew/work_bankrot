@@ -38,12 +38,17 @@ function request($id) {
   curl_close($curl);
   $obj = json_decode($response, true);
 
-
+  
+  
   if($obj['pageData'][0]) {
+    $link = 'https://fedresurs.ru/company/'.$obj['pageData'][0]['guid'];
+
     echo '<tr>';
-      echo '<td>';
-        print_r($obj['pageData'][0]['name']);
-      echo '</td>';
+      echo '<td>';?>
+        <a  href="<?=$link;?>" target="_blank">
+          <?print_r($obj['pageData'][0]['name']);?>
+        </a>
+      <?echo '</td>';
 
       echo '<td>';
         print_r($obj['pageData'][0]['inn']);
