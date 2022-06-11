@@ -1,12 +1,12 @@
 
 
-<?require_once __DIR__ . '/simplexlsx.class.php';?>
+<?require_once __DIR__ . '/classes/simplexlsx.class.php';?>
 
 
 
 
-<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="assets/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="assets/script.js"></script>
 
 <?
 function request($id) {
