@@ -260,7 +260,7 @@ class SimpleXLSX {
 				}
 		*/
 		if ( ( $pcd = strrpos( $vZ, "\x50\x4b\x05\x06" ) ) === false ) {
-			$this->error( 'Unknown archive format' );
+			$this->error( 'Неверный формат файла' );
 
 			return false;
 		}
